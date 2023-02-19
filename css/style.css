@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
 :root {
-    --green: #16a085;
+    --green: #034775;
     --black: #444;
     --light-color: #777;
     --box-shadow: .5rem .5rem 0 rgba(7, 68, 56, 0.2);
@@ -26,6 +27,16 @@ html {
     scroll-padding-top: 7rem;
     scroll-behavior: smooth;
     direction: rtl;
+}
+
+.fas {
+    transform: rotate(180deg);
+    float: left;
+}
+
+.faf {
+    transform: rotate(180deg);
+    float: none;
 }
 
 section {
@@ -512,7 +523,8 @@ section:nth-child(even) {
 }
 
 .footer .box-container .box a:hover i {
-    padding-right: 2rem;
+    padding-left: 2rem;
+    color: var(--green);
 }
 
 .footer .credit {
@@ -536,9 +548,11 @@ section:nth-child(even) {
     html {
         font-size: 55%;
     }
+
     .header {
         padding: 2rem;
     }
+
     section {
         padding: 2rem;
     }
@@ -548,6 +562,7 @@ section:nth-child(even) {
     #menu-btn {
         display: initial;
     }
+
     .header .navbar {
         position: absolute;
         top: 115%;
@@ -562,11 +577,13 @@ section:nth-child(even) {
         transform-origin: top right;
         transition: none;
     }
+
     .header .navbar.active {
         transform: scale(1);
         opacity: 1;
         transition: .2s ease-out;
     }
+
     .header .navbar a {
         font-size: 2rem;
         display: block;
