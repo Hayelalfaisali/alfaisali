@@ -1,261 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>complete responsive hospital website design </title>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Al-Faisali Tribe</title>
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/mobile.css" />
+    <!-- Scripts.js -->
+    <script src="js/script.js"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet" />
+    <!-- Font Awesome CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <!-- Font Awesome CSS PRO CDN -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.2.0/css/all.css" />
+</head>
 
-        <!-- font awesome cdn link  -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-        <!-- custom css file link  -->
-        <link rel="stylesheet" href="css/style.css">
-
-    </head>
-
-    <body>
-
-        <!-- header section starts  -->
-
-        <header class="header">
-
-            <a href="index.html" class="logo"> قبيلة الفيصلي </a>
-
-            <nav class="navbar">
-                <a href="dcoument.html">موسوعة القبيلة</a>
-                <a href="#services">الأعضاء</a>
-                <a href="#about">عن القبيلة</a>
-                <a href="#doctors">أصلها</a>
-                <a href="#book">تاريخها</a>
-                <a href="#review">المشائخ</a>
-            </nav>
-
-            <div id="menu-btn" class="fas fa-bars"></div>
-
-        </header>
-
-        <!-- header section ends -->
-
-        <!-- home section starts  -->
-
-        <section class="home" id="home">
-
-            <div class="image">
-                <img src="image/faisali.png" alt="">
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="image/logo (2).png" alt="logo" /></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times icon" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="about.html">عن القبيلة</a></li>
+                    <li><a href="course.html">أفرادها</a></li>
+                    <li><a href="blog.html">تاريخها</a></li>
+                    <li><a href="contact.html">تواصل بنا</a></li>
+                </ul>
             </div>
-
-            <div class="content">
-                <h3>قبيلة الفيصلي</h3>
+            <i class="fa-solid fa-bars icon" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1> قبيلة الفيصلي</h1>
+            <p>
+                قاموس القبائل العربية مليء بمعلوماتهم ويتحدث عن قبيلة الفيصلي واألصل الذي يعودون إليه. <br>وهي إحدى القبائل العربية التي أعلنت نفسها ولها عدة مواقع في مختلف البلدان العربية، أبرزهافي الضواحي الريفية لجبال األردن حيث تقطن قبيلة الفيصلي.
+            </p>
+            <a href="#" class="hero-btn">تعرف المزيد عن القبيلة</a>
+        </div>
+    </section>
+    <!-- Course -->
+    <section class="course">
+        <h1>Course We Offer</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="row">
+            <div class="course-col">
+                <i class="fas fa-school course-icon"></i>
+                <h3>Intermediate</h3>
                 <p>
-                    واحدة من أعرق القبائل اليمنية الاصيلة
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis amet quaerat commodi dolorem, earum similique inventore veritatis temporibus vitae facilis et ullam repudiandae? Rem, tempora.
                 </p>
-                <a href="#" class="btn"> <span class="fas fa-chevron-right"></span>تواصل بنا</a>
             </div>
-
-        </section>
-
-        <!-- home section ends -->
-        <!-- about section starts  -->
-
-        <section class="about" id="about">
-
-            <h1 class="heading"> <span>عن</span> القبيلة </h1>
-
-            <div class="row">
-
-                <div class="image">
-                    <img src="image/faisali.png" alt="">
+            <div class="course-col">
+                <i class="fas fa-diploma course-icon"></i>
+                <h3>Degree</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis amet quaerat commodi dolorem, earum similique inventore veritatis temporibus vitae facilis et ullam repudiandae? Rem, tempora.
+                </p>
+            </div>
+            <div class="course-col">
+                <i class="fa-solid fa-graduation-cap course-icon"></i>
+                <h3>Post Graduation</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis amet quaerat commodi dolorem, earum similique inventore veritatis temporibus vitae facilis et ullam repudiandae? Rem, tempora.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Campus Section -->
+    <section class="campus">
+        <h1>Our Global Campus</h1>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <div class="row">
+            <div class="campus-col">
+                <img src="image/london.png" alt="" srcset="" />
+                <div class="layer">
+                    <h3>London</h3>
                 </div>
-
-                <div class="content">
-                    <h3>قبيلة الفيصلي</h3>
+            </div>
+            <div class="campus-col">
+                <img src="image/newyork.png" alt="" srcset="" />
+                <div class="layer">
+                    <h3>New York</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="image/washington.png" alt="" srcset="" />
+                <div class="layer">
+                    <h3>Washington</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Facilities -->
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="image/library.png" alt="" srcset="" />
+                <h3>World Class Library</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam temporibus voluptatibus sequi voluptatum inventore. Est.
+                </p>
+            </div>
+            <div class="facilities-col">
+                <img src="image/basketball.png" alt="" srcset="" />
+                <h3>Largest Play Ground</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam temporibus voluptatibus sequi voluptatum inventore. Est.
+                </p>
+            </div>
+            <div class="facilities-col">
+                <img src="image/cafeteria.png" alt="" srcset="" />
+                <h3>Tasty and Healthy Food</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam temporibus voluptatibus sequi voluptatum inventore. Est.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Testomonials -->
+    <section class="testimonials">
+        <h1>What Our Student Says</h1>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <div class="row">
+            <div class="testimonials-col">
+                <img src="image/user1.jpg" alt="" srcset="" />
+                <div>
                     <p>
-                        قاموس القبائل العربية مليء بمعلوماتهم ويتحدث عن قبيلة الفيصلي والاصل الذي يعودون إليه. وهي إحدى
-                        القبائل العربية التي أعلنت نفسها ولها عدة مواقع في مختلف البلدان العربية، أبرزها في الضواحي
-                        الريفية لجبال الاردن حيث تقطن قبيلة الفيصلي
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda sit rem quod ullam at cupiditate hic? Reiciendis voluptatum rerum sunt.
                     </p>
-                    <p>تعدد أصول العشائر والقبائل العربية، وعنواننا الحالي مخصص لعائلة الفيصلي التي تأتي من رحم قبيلة
-                        الدافير التي تنحدر على طول نهر الظافر، وهي من العرب. قبائل الاردن التي تم تحديدها في قاموس
-                        القبائل العربية، حيث شرح بالتفصيل المعلومات الضرورية
-                        عن قبيلة الفيصلي.</p>
-                    <a href="#" class="btn"><span class="fas fa-chevron-right"></span> تعرف على المزيد </a>
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- about section ends -->
-        <!-- doctors section starts  -->
-
-        <section class="doctors" id="doctors">
-
-            <h1 class="heading"> أعضاء<span>القبيلة </span> </h1>
-
-            <div class="box-container">
-
-                <div class="box">
-                    <img src="image/hayel.jpg" alt="">
-                    <h3>هايل الفيصلي</h3>
-                    <span>عضو في قبيلة الفيصلي</span>
-                    <div class="share">
-                        <a href="#" class="fab fa-facebook-f"></a>
-                        <a href="#" class="fab fa-twitter"></a>
-                        <a href="#" class="fab fa-instagram"></a>
-                        <a href="#" class="fab fa-linkedin"></a>
-                    </div>
-                </div>
-                <div class="box">
-                    <img src="image/hayel.jpg" alt="">
-                    <h3>هايل الفيصلي</h3>
-                    <span>عضو في قبيلة الفيصلي</span>
-                    <div class="share">
-                        <a href="#" class="fab fa-facebook-f"></a>
-                        <a href="#" class="fab fa-twitter"></a>
-                        <a href="#" class="fab fa-instagram"></a>
-                        <a href="#" class="fab fa-linkedin"></a>
-                    </div>
-                </div>
-                <div class="box">
-                    <img src="image/hayel.jpg" alt="">
-                    <h3>هايل الفيصلي</h3>
-                    <span>عضو في قبيلة الفيصلي</span>
-                    <div class="share">
-                        <a href="#" class="fab fa-facebook-f"></a>
-                        <a href="#" class="fab fa-twitter"></a>
-                        <a href="#" class="fab fa-instagram"></a>
-                        <a href="#" class="fab fa-linkedin"></a>
-                    </div>
-                </div>
-                <div class="box">
-                    <img src="image/hayel.jpg" alt="">
-                    <h3>هايل الفيصلي</h3>
-                    <span>عضو في قبيلة الفيصلي</span>
-                    <div class="share">
-                        <a href="#" class="fab fa-facebook-f"></a>
-                        <a href="#" class="fab fa-twitter"></a>
-                        <a href="#" class="fab fa-instagram"></a>
-                        <a href="#" class="fab fa-linkedin"></a>
-                    </div>
-                </div>
-
-                <div class="box">
-                    <img src="image/hayel.jpg" alt="">
-                    <h3>هايل الفيصلي</h3>
-                    <span>عضو في قبيلة الفيصلي</span>
-                    <div class="share">
-                        <a href="#" class="fab fa-facebook-f"></a>
-                        <a href="#" class="fab fa-twitter"></a>
-                        <a href="#" class="fab fa-instagram"></a>
-                        <a href="#" class="fab fa-linkedin"></a>
-                    </div>
-                </div>
-                <div class="box">
-                    <img src="image/hayel.jpg" alt="">
-                    <h3>هايل الفيصلي</h3>
-                    <span>عضو في قبيلة الفيصلي</span>
-                    <div class="share">
-                        <a href="#" class="fab fa-facebook-f"></a>
-                        <a href="#" class="fab fa-twitter"></a>
-                        <a href="#" class="fab fa-instagram"></a>
-                        <a href="#" class="fab fa-linkedin"></a>
-                    </div>
+                    <h3>Christine Berkley</h3>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star-half-alt star"></i>
+                    <i class="far fa-star star"></i>
                 </div>
             </div>
-
-        </section>
-
-        <!-- doctors section ends -->
-
-        <!-- booking section starts   -->
-
-        <section class="book" id="book">
-
-            <h1 class="heading"> <span>تواصل</span> بنا </h1>
-
-            <div class="row">
-
-                <div class="image">
-                    <img src="image/faisali.png" alt="">
+            <div class="testimonials-col">
+                <img src="image/user2.jpg" alt="" srcset="" />
+                <div>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda sit rem quod ullam at cupiditate hic? Reiciendis voluptatum rerum sunt.
+                    </p>
+                    <h3>David Byer</h3>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star-half-alt star"></i>
                 </div>
-
-                <form action="">
-                    <h3>تواصل بنا</h3>
-                    <input type="text" placeholder="اسمك الكامل" class="box">
-                    <input type="number" placeholder="رقم الهاتف" class="box">
-                    <input type="email" placeholder="البريد الالكتروني" class="box">
-                    <input type="date" class="box">
-                    <input type="submit" value="ارسال" class="btn">
-                </form>
-
             </div>
+        </div>
+    </section>
+    <!-- Call to Action -->
+    <section class="cta">
+        <h1>
+            Enroll for our various Online Courses <br /> anywhere from the world
+        </h1>
+        <a href="contact.html" class="hero-btn">Contact Us</a>
+    </section>
 
-        </section>
+    <!-- Footer -->
+    <section class="footer">
+        <h4>تواصل بنا</h4>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, cupiditate harum <br /> sed atque enim a incidunt non doloribus mollitia esse.
+        </p>
+        <div class="icons">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-discord"></i>
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-youtube-square"></i>
+            <i class="fab fa-instagram"></i>
+            <h5>جميع الحقوق محفوظة &copy; لدى قبيلة الفيصلي</h5>
+        </div>
+    </section>
+    <!-- Menu Toggler JS  -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
 
-        <!-- booking section ends -->
-        <!-- footer section starts  -->
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
 
-        <section class="footer">
-
-            <div class="box-container">
-
-                <div class="box">
-                    <h3>روابط سريعة</h3>
-                    <a href="dcoument.html"> موسوعة القبيلة <i class="faf fas fa-chevron-right"></i></a>
-                    <a href="#"> الأعضاء <i class="faf fas fa-chevron-right"></i></a>
-                    <a href="#"> عن القبيلة <i class="faf fas fa-chevron-right"></i></a>
-                    <a href="#"> أصلها <i class="faf fas fa-chevron-right"></i></a>
-                    <a href="#"> تاريخها <i class="faf fas fa-chevron-right"></i></a>
-                    <a href="#"> المشائخ <i class="faf fas fa-chevron-right"></i></a>
-                </div>
-
-
-                <div class="box">
-                    <h3>للتواصل</h3>
-                    <a href="#"> <i class="faf fas fa-phone"></i> +967772537138 </a>
-                    <a href="#"> <i class="faf fas fa-phone"></i> +967772537138 </a>
-                    <a href="#"> <i class="faf fas fa-envelope"></i> faisali@gmail.com </a>
-                    <a href="#"> <i class="faf fas fa-envelope"></i> faisali@gmail.com </a>
-                </div>
-
-                <div class="box">
-                    <h3>تابعونا على</h3>
-                    <a href="#"> <i class="fab fa-facebook-f"></i> فيسبوك </a>
-                    <a href="#"> <i class="fab fa-twitter"></i> تويتر </a>
-                    <a href="#"> <i class="fab fa-instagram"></i> انستقرام </a>
-                    <a href="#"> <i class="fab fa-whatsapp"></i> واتساب </a>
-                </div>
-
-            </div>
-
-            <div class="credit"> جميع الحقوق محفوظة لدى <span>قبيلة الفيصلي</span></div>
-
-        </section>
-
-        <!-- footer section ends -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-- custom js file link  -->
-        <script src="js/script.js"></script>
-
-    </body>
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
 
 </html>
